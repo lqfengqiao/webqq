@@ -1,0 +1,19 @@
+{
+  "name": "webqq",
+  "private": true,
+  "preferGlobal": true,
+  "description": "a web like QQ",
+  "author": "qiao",
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "eventproxy": "^0.3.4",
+    "express": "*",
+    "express-session": "*",
+    "log4js": "^0.6.36",
+    "mysql": "*",
+    "nodemailer": "*",
+    "socket.io": "*",
+    "swig": "*"
+  }
+}

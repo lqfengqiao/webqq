@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+#guo img{position: relative;top:5px;}
+</style>
+</head>
+<body>
+<div id="guo" style="width:500px; height:200px; border:1px solid red" contenteditable="true" >
+    <img src="qqface/1.gif" />
+    </div>
+ <input type="button" value="插入" onclick="insert()" />
+<script type="text/javascript">
+	function insert() {
+            $("#guo").append("<img src='./images/gif/e123.gif' />");
+    }
+
+</script>
+<script type="text/javascript" src='js/jquery.js'>
+</script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>群聊</title>
+	<link rel="shortout icon" href="../images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/room.css">
+</head>
+<body>
+<div id="content">
+	<ul id='headerRight'>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<div id="roomMsg">
+		<img src="../images/favicon.png" alt="群头像加载失败">
+		<div>
+			<a href="javascript:void">群名称</a>
+			<p><span></span>(200人群)同事-朋友-亲友</p>
+		</div>
+	</div>
+	<div id="functionTab">
+		<div><span class="chat"></span>聊天</div>
+		<div><span class="notice"></span>公告</div>
+		<div><span class="photos"></span>相册</div>
+		<div><span class="files"></span>文件</div>
+		<div><span class="activity"></span>活动</div>
+		<div><span class="settting"></span>设置</div>
+	</div>
+	<div id="message">
+		<!-- <div class="createMsgL">
+			<img src="/images/favicon.png" alt = '头像加载失败' class="headImgL">
+			<span class="newMsgL">
+				<span class='newMsgContent'><img src='/images/gif/e100.gif'>11asd撒旦旦法11旦旦法11旦旦法11旦旦法11旦旦法11旦旦法11旦旦法11旦旦法11旦旦法11旦旦法11旦旦法11旦法111asas</span>
+				<p>姓名&nbsp;&nbsp;&nbsp;&nbsp;时间 </p>
+			</span>
+			<div></div>
+		</div>
+		<div class="createMsgR">
+			<img src="/images/favicon.png" alt = '头像加载失败' class="headImgR">
+			<span class="newMsgR">
+				<span class='newMsgContent'><img src='/images/gif/e100.gif'>旦sas</span>
+				<p>姓名&nbsp;&nbsp;&nbsp;&nbsp;时间 </p>
+			</span>
+			<div></div>
+		</div> -->
+	</div>
+	<div id="roomRight">
+		<p>群通知</p>
+		<div class="information">
+			<div id="noForm">
+				<span></span>
+				<p>暂时没有新通知</p>
+			</div>
+		</div>
+		<div class="moreText">
+			<span>群应用</span>
+			<a href="javascript:void" class="more">更多</a>
+		</div>
+		<div class="roomProgram">
+			<ul id='groupFunction'>
+				<li><span class="video"></span><p>群视頻</p></li>
+				<li><span class="groupFiles"></span><p>文件</p></li>
+				<li><span class="groupActivity"></span><p>群活动</p></li>
+				<li><span class="sign"></span><p>签到</p></li>
+			</ul>
+			<div id="btns">
+				<span class="btnOn"></span>
+				<span class="btnOff"></span>
+				<span class="btnOff"></span>
+			</div>
+		</div>
+		<div class="moreText searchBg">
+			<span>群成员</span>
+			<a href="javascript:void"><span id="searchPeople"></span></a>
+			<a href="javascript:void"><span id="noSay"></span></a>
+		</div>
+		<input type="text" id='search' value="搜索群成员">
+		<div class="peoples">
+			<div id='myname' hidden>{{username}}</div>
+			<p><span class="leader"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小王</span></p>
+			<p><span class="secondLeader"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小李</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+			<p><span class="normalPeople"></span><img class="headPortrait" src="../images/favicon.png"><span class="name">小周</span></p>
+		</div>
+	</div>
+	<div id='smallImg'>
+		<div id="emoji">
+			<span class="emojiHeader"></span>
+			<div class="gifs">
+				<div class="emojiBd" id='firstEmoji'>
+					<img src="../images/gif/e100.gif">
+					<img src="../images/gif/e101.gif">
+					<img src="../images/gif/e102.gif">
+					<img src="../images/gif/e103.gif">
+					<img src="../images/gif/e104.gif">
+					<img src="../images/gif/e105.gif">
+					<img src="../images/gif/e106.gif">
+					<img src="../images/gif/e107.gif">
+					<img src="../images/gif/e108.gif">
+					<img src="../images/gif/e109.gif">
+					<img src="../images/gif/e110.gif">
+					<img src="../images/gif/e111.gif">
+					<img src="../images/gif/e112.gif">
+					<img src="../images/gif/e113.gif">
+					<img src="../images/gif/e114.gif">
+					<img src="../images/gif/e115.gif">
+					<img src="../images/gif/e116.gif">
+					<img src="../images/gif/e117.gif">
+					<img src="../images/gif/e118.gif">
+					<img src="../images/gif/e119.gif">
+					<img src="../images/gif/e120.gif">
+					<img src="../images/gif/e121.gif">
+					<img src="../images/gif/e122.gif">
+					<img src="../images/gif/e123.gif">
+					<img src="../images/gif/e124.gif">
+					<img src="../images/gif/e125.gif">
+					<img src="../images/gif/e126.gif">
+					<img src="../images/gif/e127.gif">
+					<img src="../images/gif/e128.gif">
+					<img src="../images/gif/e129.gif">
+					<img src="../images/gif/e130.gif">
+					<img src="../images/gif/e131.gif">
+					<img src="../images/gif/e132.gif">
+					<img src="../images/gif/e133.gif">
+					<img src="../images/gif/e134.gif">
+					<img src="../images/gif/e135.gif">
+					<img src="../images/gif/e136.gif">
+					<img src="../images/gif/e137.gif">
+					<img src="../images/gif/e138.gif">
+					<img src="../images/gif/e139.gif">
+					<img src="../images/gif/e140.gif">
+					<img src="../images/gif/e141.gif">
+					<img src="../images/gif/e142.gif">
+					<img src="../images/gif/e143.gif">
+					<img src="../images/gif/e144.gif">
+					<img src="../images/gif/e145.gif">
+					<img src="../images/gif/e146.gif">
+					<img src="../images/gif/e147.gif">
+					<img src="../images/gif/e148.gif">
+					<img src="../images/gif/e149.gif">
+					<img src="../images/gif/e150.gif">
+					<img src="../images/gif/e151.gif">
+					<img src="../images/gif/e152.gif">
+					<img src="../images/gif/e153.gif">
+					<img src="../images/gif/e154.gif">
+					<img src="../images/gif/e155.gif">
+					<img src="../images/gif/e156.gif">
+					<img src="../images/gif/e157.gif">
+					<img src="../images/gif/e158.gif">
+					<img src="../images/gif/e159.gif">
+					<img src="../images/gif/e160.gif">
+					<img src="../images/gif/e161.gif">
+					<img src="../images/gif/e162.gif">
+					<img src="../images/gif/e163.gif">
+					<img src="../images/gif/e164.gif">
+					<img src="../images/gif/e165.gif">
+					<img src="../images/gif/e166.gif">
+					<img src="../images/gif/e167.gif">
+					<img src="../images/gif/e168.gif">
+					<img src="../images/gif/e169.gif">
+					<img src="../images/gif/e170.gif">
+					<img src="../images/gif/e171.gif">
+					<img src="../images/gif/e172.gif">
+					<img src="../images/gif/e173.gif">
+					<img src="../images/gif/e174.gif">
+					<img src="../images/gif/e175.gif">
+					<img src="../images/gif/e176.gif">
+					<img src="../images/gif/e177.gif">
+					<img src="../images/gif/e178.gif">
+					<img src="../images/gif/e179.gif">
+					<img src="../images/gif/e180.gif">
+					<img src="../images/gif/e181.gif">
+					<img src="../images/gif/e182.gif">
+					<img src="../images/gif/e183.gif">
+					<img src="../images/gif/e184.gif">
+					<img src="../images/gif/e185.gif">
+					<img src="../images/gif/e186.gif">
+					<img src="../images/gif/e187.gif">
+					<img src="../images/gif/e188.gif">
+					<img src="../images/gif/e188.gif">
+				</div>
+				<div class="emojiBd" id='secondEmoji'>
+					<img src="../images/gif/e100.gif">
+					<img src="../images/gif/e101.gif">
+					<img src="../images/gif/e102.gif">
+					<img src="../images/gif/e103.gif">
+					<img src="../images/gif/e104.gif">
+					<img src="../images/gif/e105.gif">
+					<img src="../images/gif/e106.gif">
+					<img src="../images/gif/e107.gif">
+					<img src="../images/gif/e108.gif">
+					<img src="../images/gif/e109.gif">
+					<img src="../images/gif/e110.gif">
+					<img src="../images/gif/e111.gif">
+					<img src="../images/gif/e112.gif">
+					<img src="../images/gif/e113.gif">
+					<img src="../images/gif/e114.gif">
+					<img src="../images/gif/e115.gif">
+					<img src="../images/gif/e116.gif">
+					<img src="../images/gif/e117.gif">
+					<img src="../images/gif/e118.gif">
+					<img src="../images/gif/e119.gif">
+					<img src="../images/gif/e120.gif">
+					<img src="../images/gif/e121.gif">
+					<img src="../images/gif/e122.gif">
+					<img src="../images/gif/e123.gif">
+					<img src="../images/gif/e124.gif">
+					<img src="../images/gif/e125.gif">
+					<img src="../images/gif/e126.gif">
+					<img src="../images/gif/e127.gif">
+					<img src="../images/gif/e128.gif">
+					<img src="../images/gif/e129.gif">
+					<img src="../images/gif/e130.gif">
+					<img src="../images/gif/e131.gif">
+					<img src="../images/gif/e132.gif">
+					<img src="../images/gif/e133.gif">
+					<img src="../images/gif/e134.gif">
+					<img src="../images/gif/e135.gif">
+					<img src="../images/gif/e136.gif">
+					<img src="../images/gif/e137.gif">
+					<img src="../images/gif/e138.gif">
+					<img src="../images/gif/e139.gif">
+					<img src="../images/gif/e140.gif">
+					<img src="../images/gif/e141.gif">
+					<img src="../images/gif/e142.gif">
+					<img src="../images/gif/e143.gif">
+					<img src="../images/gif/e144.gif">
+					<img src="../images/gif/e145.gif">
+					<img src="../images/gif/e146.gif">
+					<img src="../images/gif/e147.gif">
+					<img src="../images/gif/e148.gif">
+					<img src="../images/gif/e149.gif">
+					<img src="../images/gif/e150.gif">
+					<img src="../images/gif/e151.gif">
+					<img src="../images/gif/e152.gif">
+					<img src="../images/gif/e153.gif">
+					<img src="../images/gif/e154.gif">
+					<img src="../images/gif/e155.gif">
+					<img src="../images/gif/e156.gif">
+					<img src="../images/gif/e157.gif">
+					<img src="../images/gif/e158.gif">
+					<img src="../images/gif/e159.gif">
+					<img src="../images/gif/e160.gif">
+					<img src="../images/gif/e161.gif">
+					<img src="../images/gif/e162.gif">
+					<img src="../images/gif/e163.gif">
+					<img src="../images/gif/e164.gif">
+					<img src="../images/gif/e165.gif">
+					<img src="../images/gif/e166.gif">
+					<img src="../images/gif/e167.gif">
+					<img src="../images/gif/e168.gif">
+					<img src="../images/gif/e169.gif">
+					<img src="../images/gif/e170.gif">
+					<img src="../images/gif/e171.gif">
+					<img src="../images/gif/e172.gif">
+					<img src="../images/gif/e173.gif">
+					<img src="../images/gif/e174.gif">
+					<img src="../images/gif/e175.gif">
+					<img src="../images/gif/e176.gif">
+					<img src="../images/gif/e177.gif">
+					<img src="../images/gif/e178.gif">
+					<img src="../images/gif/e179.gif">
+					<img src="../images/gif/e180.gif">
+					<img src="../images/gif/e181.gif">
+					<img src="../images/gif/e182.gif">
+					<img src="../images/gif/e183.gif">
+					<img src="../images/gif/e184.gif">
+					<img src="../images/gif/e185.gif">
+					<img src="../images/gif/e186.gif">
+					<img src="../images/gif/e187.gif">
+					<img src="../images/gif/e188.gif">
+					<img src="../images/gif/e188.gif">
+				</div>
+			</div>
+			<div class="moreEmoji">
+				<div><span id='bigEmoji'></span></div>
+				<div><span id='normal'></span></div>
+				<div><span id='signEmoji'></span></div>
+				<div><span id='mulEmoji'></span></div>
+				<div><span id='collection'></span></div>
+				<div><span id='highDefinition'></span></div>
+				<div><span id='babyQ'></span></div>
+				<div><span id='emojiStrring'></span></div>
+			</div>
+		</div>
+		<ul>
+			<li><span class="word"></span></li>
+			<li><span class="smallGif"></span></li>
+			<li><span class="magic"></span></li>
+			<li><span class="noName"></span></li>
+			<li><span class="sendImg"></span></li>
+			<li><span class="sendFile"></span></li>
+			<li><span class="sendGift"></span></li>
+			<li><span class="screenshot"></span></li>
+			<li><span class="msgSetting"></span></li>
+			<li class="msgMark"><span></span>消息记录</li>
+		</ul>
+	</div>
+	<div id="inputMsg">
+		<div id='input' contenteditable="true"></div>
+		<div id='sendMsg'>
+			<div id="msgTip">
+				<div class="triangleBd"></div>
+				<div class="triangleBg"></div>
+				<span></span>发送内容不能为空，请重新输入
+			</div>
+			<input type="button" value="关闭(c)">
+			<input type='button' value='发送(s)' id='sendBtn'>
+		</div>
+	</div>
+</div>
+
+<script type="text/data-script" id='data'>{{username}}</script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src ="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="../js/room.js"></script>
+</body>
+</html>

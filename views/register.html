@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortout icon"  href="../images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="../css/register.css">
+<title>QQ注册</title>
+</head>
+<body>
+<div id="headBg"></div>
+<div id="header">
+	<div class="logoBg">
+	</div>
+</div>
+<div id="content">
+	<div class="left">
+		<div class="blueBg leftMsg">
+			<span id='QQ'></span>
+			<h3>QQ帐号</h3>
+			<p>由数字组成，经典通行帐号</p>
+		</div>
+		<div class="whiteBg leftMsg">
+			<span id='email'></span>
+			<h3>邮箱帐号</h3>
+			<p>用邮箱地址注册，便于记忆</p>
+		</div>
+		<div id="search">
+			<span class="searchR"></span>
+			<input class="searchL" type="text" value="输入想要的4-10位数字">
+			<div>
+				<a href="javascript:void"><span class='smallImg birthday'></span>生日</a>
+				<a href="javascript:void"><span class='smallImg love'></span>爱情</a>
+				<a href="javascript:void"><span class='smallImg phone'></span>手机</a>
+				<a href="javascript:void"><span class='smallImg year'></span>年度</a>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div id="language">
+			<span>简体中文|</span><a href="javascript:void">繁体中文</a><span>|</span><a href="javascript:void">English</a>
+		</div>
+		<a href='javascript:void' id='feedback'>意见反馈</a>
+		<img src="../images/register/enterBannerC.jpg" alt="图片加载中..." class="headImg">
+		<div id='userRegister'>
+			<div class="headRegister">
+				<span></span>
+				<p>注册帐号</p>
+			</div>
+			<div class="leftRegister">
+				<div class="leftInput">
+					昵称<input type="text" id='username'>
+				</div>
+				<div class="leftInput">
+					密码<input type="password" id='password'>
+				</div>
+				<div class="leftInput">
+					确认密码<input type="password" id='repeatPassword'>
+				</div>
+				<div id='sex' class="leftInput">
+					性别<span id='boy' class="sexOn"></span>男 <span id='girl' class="sexOff"></span>女
+				</div>
+				<div class="leftInput Birthdaytime" id='birthdaySelect'>
+					<span id='birthdayText'>生日</span>
+					<div class="select">
+						<span id='selectMod'>公历</span>
+						<input class='selectYear' value='年' type="text" />
+						<input class='selectMonth' value='月'type="text"/>
+						<input class='selectDay' value='日' type="text"/>
+					</div>
+				</div>
+				<div class="leftInput">
+					<span id='address'>所在地</span>
+					<div class="select">
+						<input id='selectCountry' value='中国'/>
+						<input id='selectProvince' value='广东'/>
+						<input id='selectCity' value='广州'/>
+					</div>
+				</div>
+				<div class="leftInput" id='Captcha'>
+					验证码(先不做)<span></span>
+				</div>
+				<div class="leftInput">
+					邮箱地址<input type="text" id='emailAddress'>
+				</div>
+				<div class='forgetTips'>
+					<p>忘记密码时，可通过该邮箱快速 找回密码</p>
+					<p>请输入中国大陆手机号码（不含小灵通）</p>
+					<p>其他地区号码<a href="javascript:void">请点这里</a></p>
+					<input type="text" class="inputText" id='emailCode'/>
+					<input type="button" class="getMsg" value="获取邮件验证码" id='getEmail'/>
+					<p class="openZone"><span class='agree'></span>同时开通QQ空间</p>
+					<p class="checkBox"><span class="agree"></span>我已阅读并同意相关服务条款和隐私条例</p>
+					<input type="button" id="submitRegister" value="提交注册">
+				</div>
+			</div>
+			<div class="rightRegister">
+				<div id="usernameTip">
+					<div>请输入昵称</div>
+					<div class="hide"><span class="trueTip usernameTrue"></span></div>
+					<div class="hide"><span class="warnTip"></span>昵称不可以为空</div>
+				</div>
+				<div id="pswTip" class="hide">
+					<p><span class="blueTip"></span>长度为6-16个字符</p>
+					<p><span class="blueTip"></span>不能是9位以下纯数字</p>
+					<p><span class="blueTip"></span>不能包含空格</p>
+					<div class="pswTipBorder"></div>
+					<div class="pswTipColor"></div>
+				</div>
+				<div id="repeatPswTip">
+					<p class="hide">请再次输入密码</p>
+					<p class="hide"><span class="warnTip"></span>请再次输入密码</p>
+					<p class="hide"><span class="warnTip"></span>密码不一致</p>
+					<p class="hide"><span class="trueTip"></span></p>
+				</div>
+				<div id="birthdayTip" class="hide">
+					<span class="trueTip"></span>属狗 魔蝎座
+				</div>
+				<div id="addressTip" class="hide">
+					<span class="trueTip"></span>
+				</div>
+				<div id="safeTip">
+					<p>请先进行安全验证</p>
+				</div>
+				<div id="emailTip">
+					<p>请输入邮箱地址</p>
+					<p class="hide"><span class="trueTip"></span>发送成功，请登录邮箱查看</p>
+					<p class="hide"><span class="warnTip"></span>请输入正确邮箱地址</p>
+				</div>
+				<div id="emailCodeTip">
+					<p>请输入正确的4位数字验证码</p>
+					<p class="hide"><span class="trueTip"></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	Copyright © 1998-2016 Tencent All Rights Reserved 腾讯公司 版权所有
+</div>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/register.js"></script>
+</body>
+</html>

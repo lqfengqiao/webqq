@@ -1,0 +1,188 @@
+* {margin: 0;padding: 0;}
+body{font-size: 12px;color: #1F1F1F;}
+a{list-style: none;text-decoration: none;}
+#content {width: 660px; height: 550px;margin:50px auto;margin-bottom:0;background: #e8ebf4;
+	border: 1px #9f9fab solid;}
+#headerRight {float:right;width: 160px;height: 32px;border: 1px blue solid;}
+#headerRight li{float:left;width: 30px;height: 30px;border: 1px red solid;list-style: none;}
+#roomMsg {width: 300px;height: 45px;margin: 5px 0 0 7px;}
+#roomMsg img{float: left;width: 45px;height: 45px;}
+#roomMsg div{float: left;margin-left: 5px;padding-top: 5px;}
+#roomMsg a{text-decoration: none;color: black;font-weight: bold;}
+#roomMsg p{font-size: 10px;margin-top: 5px;color: #4B4A4A;}
+#roomMsg p span {float:left;width: 14px;height: 14px;background: url(../images/room/bgImg.png) no-repeat -42px 0;}
+#functionTab {height: 35px;margin-top:5px;padding-left:5px;border-bottom: 1px #cdd3e3 solid;
+	font-size: 14px;}
+#functionTab div{height:23px;line-height:23px;text-align:center;padding:5px;float: left;
+	border: 1px transparent dashed;margin-top: 1px;margin-right:3px;border-radius: 2px;}
+#functionTab div:first-child{border: 1px #9f9fab solid; border-bottom:none;}
+#functionTab div:first-child:hover{background: none;}
+#functionTab div:hover {cursor: default;background: #d1d0de;border: 1px #9f9fab solid;border-bottom:none; }
+#functionTab div span {float:left;}
+#functionTab .chat{width: 21px;height: 21px;background: url(../images/room/bgImg.png) no-repeat 0 0;}
+#functionTab .notice{width: 23px;height: 23px;background: url(../images/room/bgImg.png) no-repeat 0 -26px;}
+#functionTab .photos{width: 24px;height: 24px;background: url(../images/room/bgImg.png) no-repeat 0 -56px;}
+#functionTab .files{width: 23px;height: 23px;background: url(../images/room/bgImg.png) no-repeat 0 -85px;}
+#functionTab .activity{width: 23px;height: 23px;background:url(../images/room/bgImg.png) no-repeat 0 -113px;}
+#functionTab .settting{width: 23px;height: 23px;background: url(../images/room/bgImg.png) no-repeat 0 -141px;}
+#message {float:left;width: 444px;height: 288px;border-bottom: 1px #cdd3e3 solid;overflow-y:scroll;}
+#message p{height: 50px;}
+#roomRight {float: right;width: 212px;height: 450px;border: 1px #cdd3e3 solid;font-size:12px;border-top:none; }
+#roomRight .information {width:100%;height: 140px;float: left;background: #e9f3fc;}
+#noForm {height:140px;line-height:100%;text-align: center;margin-top: 20px;}
+#noForm span{width: 59px;height: 59px;display: inline-block;background: url(../images/room/bgImg.png) no-repeat -318px 0;}
+#roomRight .moreText {width:100%;height: 30px;line-height:30px;overflow: hidden;}
+#roomRight .moreText a{float: right;color: #4883bb;}
+#roomRight .moreText a span{float: left;width: 15px;height: 15px;margin-top: 7px;margin-right: 5px;}
+#noSay {background: url(../images/room/bgImg.png) no-repeat -238px -185px;}
+#searchPeople {background: url(../images/room/bgImg.png) no-repeat -238px -216px;}
+#roomRight .searchBg{background: #cad4ea;}
+#groupFunction {list-style: none;padding-top: 10px;margin-left: 8px;}
+#groupFunction li{float: left;width: 50px;font-size: 13px;text-align: center;}
+#groupFunction li span{width: 24px;height: 24px;display: inline-block;}
+#groupFunction .video{background: url(../images/room/bgImg.png) no-repeat -235px 0;}
+#groupFunction .groupFiles{background: url(../images/room/bgImg.png) no-repeat -235px -39px;}
+#groupFunction .groupActivity{background: url(../images/room/bgImg.png) no-repeat -235px -88px;}
+#groupFunction .sign{background: url(../images/room/bgImg.png) no-repeat -235px -137px;}
+#btns {width: 36px;height:3px;float:left;margin:7px  0 0 88px;}
+#btns span{width: 10px;height: 3px;float:left;margin-right:2px;}
+#btns .btnOn{background: #4883bb;}
+#btns .btnOff{background: #959595;}
+#search {width: 208px;height: 25px;background: #b9bec9;color: #76777b;display: none;}
+#roomRight .roomProgram{width: 100%;height: 70px;background: #e9f3fc;}
+#smallImg {width: 444px;height: 30px;position: relative;}
+#smallImg li{list-style: none;float: left;margin:5px;border: 1px transparent dashed;padding:2px;}
+#smallImg li:hover {border: 1px #7e8389 solid;cursor: default;}
+#smallImg li span {width: 16px;height: 16px;float:left;}
+#smallImg .word {background: url(../images/room/bgImg.png) no-repeat -92px -224px;}
+#smallImg .smallGif {background: url(../images/room/bgImg.png) no-repeat -92px -201px;}
+#smallImg .magic {background: url(../images/room/bgImg.png) no-repeat -92px -179px;}
+#smallImg .noName {background: url(../images/room/bgImg.png) no-repeat -92px -157px;}
+#smallImg .sendImg {background: url(../images/room/bgImg.png) no-repeat -92px -137px;}
+#smallImg .sendFile {background: url(../images/room/bgImg.png) no-repeat -92px -116px;}
+#smallImg .sendGift {background: url(../images/room/bgImg.png) no-repeat -92px -94px;}
+#smallImg .screenshot {background: url(../images/room/bgImg.png) no-repeat -92px -72px;}
+#smallImg .msgSetting {background: url(../images/room/bgImg.png) no-repeat -92px -49px;}
+#smallImg .msgMark {float: right;}
+#smallImg .msgMark span{background: url(../images/room/bgImg.png) no-repeat -92px -26px;}
+#emoji {width: 460px;height: 320px;border: 1px #9f9fab solid;position: absolute;left: -180px;top:-30px;
+background:#ffffff;display: none;}
+#emoji .gifs {width: 453px;height: 190px;margin:10px 0 0 10px;overflow-y:scroll;background: #edffef;}
+#emoji .emojiBd img {border-right: 1px #9f9fab solid;border-bottom:1px #9f9fab solid;
+	float: left;padding: 2px;}
+#emoji .emojiBd {border-top:1px #9f9fab solid;border-left:1px #9f9fab solid;width: 435px;height: 174px;
+	overflow: hidden;}
+#emoji .emojiHeader {width: 440px;height: 63px;float: left;margin: 10px 0 5px 10px;
+	background: url(../images/room/bgImg.png) no-repeat 0 -339px;}
+#firstEmoji {margin-bottom: -1px;}
+#emoji .moreEmoji{float:left;width:100%;margin-top:8px;height:42px;background:#e8ebf4; }
+#emoji .moreEmoji div{float: left;}
+#emoji .moreEmoji span{width: 20px;height: 20px;float:left;}
+#emoji .moreEmoji div:first-child{margin-left: 10px;}
+#emoji .moreEmoji div:last-child{float: right;}
+#emoji .moreEmoji div:not(:first-child) {padding:10px;}
+#emoji #bigEmoji {width: 103px;height: 29px;background: url(../images/room/bgImg.png) no-repeat 0 -416px;}
+#emoji #normal {background: url(../images/room/bgImg.png) no-repeat 0 -454px;}
+#emoji #signEmoji {background: url(../images/room/bgImg.png) no-repeat 0 -454px;}
+#emoji #mulEmoji {background: url(../images/room/bgImg.png) no-repeat 0 -454px;}
+#emoji #collection {background: url(../images/room/bgImg.png) no-repeat 0 -454px;}
+#emoji #highDefinition {background: url(../images/room/bgImg.png) no-repeat 0 -454px;}
+#emoji #babyQ {background: url(../images/room/bgImg.png) no-repeat 0 -454px;}
+#emoji #emojiStrring {background: url(../images/room/bgImg.png) no-repeat 0 -454px;}
+#inputMsg {width: 444px;height: 130px;}
+#input {position:relative;width: 440px;margin-left:4px;height: 90px;overflow: hidden;line-height:100%;background: #e8ebf4;
+	font-size: 20px;outline:none;overflow-y:scroll;}
+#inputMsg div:last-child{float: right;margin-top: 10px;}
+#inputMsg div input{width:100px;height:30px;background:#2875d1;color: white;padding: 5px 10px;border-radius:3px;border: none;}
+#inputMsg div input:hover{opacity: 0.75;}
+#roomRight .peoples{width: 100%;height: 170px;overflow-y:scroll;}
+#roomRight .peoples:hover{cursor: default;}
+#roomRight .peoples p{height: 15px;margin: 3px;font-size: 12px;}
+#roomRight .peoples p span:first-child {width:15px;height: 15px;float: left; }
+#roomRight .peoples .leader {background: url(../images/room/bgImg.png) no-repeat -120px 0;}
+#roomRight .peoples .secondLeader {background: url(../images/room/bgImg.png) no-repeat -121px -21px;}
+#roomRight .peoples img {width:15px;height: 15px;float: left;}
+#sendMsg {position: relative;}
+#msgTip {width: 185px;height: 30px;padding:5px;border: 1px #578397 solid;position: absolute;
+	background: white;top:-50px;left:-20px;font-size: 13px;display: none;}
+#msgTip span{width: 12px;height: 12px;float: left;
+	background: url(../images/register/pwd_sprite.png) no-repeat -1px -220px;}
+#msgTip .triangleBg {position: absolute;width:0px;height:0px;border-top:5px white solid;
+	border-left:5px transparent solid;border-right:5px transparent solid;top:40px;left:150px;}
+#msgTip .triangleBd {position: absolute;width:0px;height:0px;border-top:5px #578397 solid;
+	top:40px;left:150px;border-left:5px transparent solid;border-right:5px transparent solid;
+	margin-top: 1px;}
+/*#message .leftTop {position:absolute;top:-4px;left:-5px;
+	background: url(../images/room/bgImg.png) no-repeat -4px -281px;}
+#message .rightTop {position:absolute;top:-5px;left:100%;margin-left: -8px;
+	background: url(../images/room/bgImg.png) no-repeat -173px -279px;}
+#message .leftBottom {position:absolute;top:100%;margin:-7px 0 0 -14px;
+	background: url(../images/room/bgImg.png) no-repeat -3px -300px;}
+#message .rightBottom {position:absolute;top:100%;left:100%;margin: -7px 0 0 -7px;
+background: url(../images/room/bgImg.png) no-repeat -173px -299px;}*/
+#message .createMsgL {position: relative;margin:40px 20px 0 10px;float: left;clear: both;}
+#message .newMsgL {margin:10px 20px 0 40px;position: relative;background: white;
+	padding: 5px 7px;border-radius: 4px;float: left;}
+#message .createMsgL div {width: 0px;height: 0px;position: absolute;left:35px;top:20px;
+	border-right:5px white solid;border-top:5px transparent dashed;border-bottom:5px transparent dashed;}
+#message .createMsgL .newMsgContent img {position:relative;top:5px;}
+#message .createMsgL p {width:300px;height:20px;position: absolute;top:0;left:-2px;
+	margin-top:-20px;color: #7C7A7A;}
+#message .createMsgL .headImgL{width: 30px;height: 30px;margin-right: 10px;position: absolute;left:0;}
+#message .createMsgR {position: relative;margin:40px 20px 0 10px;float: right;clear: both;}
+#message .newMsgR {background: #9feb6a;margin:8px 25px 0 20px;position: relative;
+	padding: 5px 7px;color: #fff7dd;border-radius: 4px;float: right;}
+#message .createMsgR .headImgR {width: 30px;height: 30px;margin-right: 10px;position: absolute;
+	left:100%;margin-left:-20px;}
+#message .createMsgR p {width:300px;height:20px;position:absolute;top:0;margin-top:-20px;
+	left:100%;margin-left:-300px;color: #7C7A7A;text-align: right}
+#message .newMsgContent {font-size: 16px;}
+#message .createMsgR .newMsgContent img {position: relative;top:5px;}
+#message .createMsgR div {width: 0px;height: 0px;position: absolute;right:20px;top:15px;
+	border-left:5px #9feb6a solid;border-top:5px transparent dashed;border-bottom:5px transparent dashed;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

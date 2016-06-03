@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QQ登录</title>
+<link rel="shortout icon"  href="./images/favicon.ico">
+<style type="text/css">
+*{margin:0;padding: 0;}
+a{text-decoration: none;color: #008ec8;}
+#content {position:relative;width: 430px;height: 330px;border: 1px #008ec8 solid;
+	background:#ebf3f9;z-index: 5;}
+#header {width: 100%;height: 180px;background: url(images/index/indexd_03.png) repeat;
+	overflow: hidden;}
+#small_logo{float: right;width: 90px;height: 32px;}
+#small_logo img{width: 30px;height: 30px;float:left;}
+#mid_logo {width:132px;height:61px;margin-top:60px;margin-left: 150px;
+	background: url(images/index/index_logo.png) no-repeat 0 0;}
+#middle {width:350px;height: 82px;margin-top:10px;margin-left:45px;}
+#middle img{width: 80px;height: 80px;float: left;}
+#middle .message{position:relative;color: #BEBBBB;margin-left: 90px;overflow: hidden;}
+#middle .input_text{float: left;width: 190px;}
+#middle .input_text input{width: 190px;height: 25px;color: #BEBBBB;text-indent: 5px;
+	padding: 0px;}
+#middle .input_text input:first-child{border-top-left-radius:5px;
+	border-top-right-radius:5px;border: 1px solid;}
+#middle .input_text input:last-child{border-bottom-left-radius:3px;
+	border-bottom-right-radius:5px;border: 1px solid;}
+#triangle{height: 25px;width: 25px;position: absolute;margin-left:165px;}
+#triangle div{height: 0px;width: 0px;overflow:hidden;border-top:5px solid;
+	border-left:5px solid transparent;border-right:5px solid transparent;margin:10px;}
+#triangle:hover{color: #0D0D0D;}
+#form{margin-top: 60px;width: 190px;color: #424141;}
+#form .left{float: left;}
+#form .right{float: right;}
+#form label{color: #797979;font-size: 12px;}
+#form input{position:relative;top: 3px;}
+#mid_right{float:right;width: 60px;height:50px;line-height:23px;}
+#mid_right a{font-size: 12px;margin-left: 5px;}
+#mid_right a:hover{opacity: 0.5}
+#btn{width: 190px;height: 32px;background:#08a3db;color: #FFFFFF;
+	margin: 10px 0 0 135px;border-radius: 6px;}
+#tip_user{width: 130px;height: 25px;text-align:center;line-height:25px;
+	border: 1px #588397 solid;position: absolute;border-radius:3px;
+	margin-top: -55px;margin-left:62px;background:white;font-size: 12px;
+	z-index: 20;display: none;}
+#tip_user span{color: #333232;}
+.bgborder{position:absolute;width: 0px;height: 0px;border-bottom:8px solid;border-left:8px solid;
+	border-right:8px solid;border-color: #588397 transparent;margin: -33px 0 0 21px;}
+.bgcolor{position:absolute;width: 0px;height: 0px;border-bottom:8px solid;border-left:8px solid;
+	border-right:8px solid;border-color: white transparent;margin: -32px 0 0 21px;}
+#tip_psw{width: 130px;height: 25px;text-align:center;line-height:25px;
+	border: 1px #588397 solid;position: absolute;border-radius:3px;
+	margin-top: -30px;margin-left:62px;background:white;font-size: 12px;
+	z-index: 20;display: none;}
+#tip_psw span{color: #333232;}
+#errorTip {background: #f9f5d6;width: 100%;height: 54px;margin-top: 15px;
+	border: 1px #008ec8 solid;border-top:none;margin-left:-1px;display: none;}
+#errorTip img{margin-top: 5px;float: left;}
+#errorTip .errorText{width: 350px;height: 48px;float: left;
+	margin-top: 5px;}
+#errorTip .errorText p {font-size: 12px;color: #292929;height: 16px;line-height: 100%;}
+#errorTriangle {float:right;margin-top:20px;}
+#errorTriangle .errBorder{width: 0px;height: 0px;border-bottom: 6px #979696 solid;
+	border-right: 5px transparent solid;border-left: 5px transparent solid; }
+#errorTriangle .errColor{width: 0px;height: 0px;border-bottom: 6px #f9f5d6 solid;
+	border-right: 5px transparent solid;border-left: 5px transparent solid;
+	margin-top: -4px;}
+#errorTriangle:hover .errBorder{border-bottom-color:#393838;}
+</style>
+</head>
+<body>
+<div id="content" style="left:460px;top:130px;">
+	<div id="header">
+		<div id="small_logo">
+			<img src="">
+			<img src="images/index/smaller_1.png">
+			<img src="images/index/close_01.png">
+		</div>
+		<div id="mid_logo"></div>
+	</div>
+	<div id="middle">
+		<img src="./images/favicon.png" onerror="this.src='./images/favicon.ico'" alt="图片加载失败">
+		<div class="message">
+			<div id="triangle">
+				<div></div>
+			</div>
+			<div class="input_text">
+				<input type="text" value = "QQ号码\手机\邮箱" id='user'>
+				<input type="text" value = "密码" id='password'>
+			</div>
+			<div id="mid_right">
+				<a href="./router/register.html">注册帐号</a>
+				<a href="javascript:void">找回密码</a>
+			</div>
+			<form id="form" >
+				<label class="left"><input  type="checkbox" />记住密码</label>
+				<label class="right"><input type="checkbox" />自动登录</label>
+			</form>
+		</div>
+		<div id="tip_user">
+			<span>请您输入帐号后再登录</span>
+			<div class="bgborder"></div>
+			<div class="bgcolor"></div>
+		</div>
+		<div id="tip_psw">
+			<span>请您输入密码后再登录</span>
+			<div class="bgborder"></div>
+			<div class="bgcolor"></div>
+		</div>
+	</div>
+	<input  type="button" value="登   录" id='btn'>
+	<div id='errorTip'>
+		<img src="./images/index/warn.png">
+		<div class="errorText">
+			<p>您输入的帐号不存在，请确认后重新输入</p>
+			<p>如果您的帐号为非大陆手机号，请<a href="javascript:void">点击这里</a>进行登录</p>
+			<p>[0004e]</p>
+		</div>
+		<div id='errorTriangle'>
+			<div class="errBorder"></div>
+			<div class="errColor"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
